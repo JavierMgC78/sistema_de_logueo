@@ -1,0 +1,9 @@
+
+Options All -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^([0-9a-zA-Z-_]+)$ index.php?op=$1 [L]
+    RewriteRule ^([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)$ index.php?depto=$1&op=$2 [L]
+    
+</IfModule>
