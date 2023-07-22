@@ -1,7 +1,7 @@
 <?php
 
-include_once ('ctrls/tablas/Ctrl_tabla_url_opciones.php');
-$pages = Ctrl_tabla_url_opciones::obtener_url_opciones();
+include_once ('ctrls/tablas/Ctrl_url_opciones.php');
+$pages = Ctrl_url_opciones::obtener_url_opciones();
 //print_r($pages);
 
 ?>

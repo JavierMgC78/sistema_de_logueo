@@ -1,24 +1,22 @@
 <?php
-require_once ("mdls/paginas/Mdl_pagina_acceso.php");
+require_once ("mdls/tablas/Mdl_plantilla_laboral.php");
 require_once ("functions.php");
 
-class Ctrl_pagina_acceso{
-
+class Ctrl_acceso{
 
     public function verificar_acceso(){
         $acceso     = [];
-        $mensaje    = '';
         
         // Verificar si se ha enviado el formulario
         if (isset($_POST['sbmt_formAcceso'])) {
 
             $datosAcceso = array(
-                'name_user' => sanitizar($_POST['name_user']),
-                'pass_user' => md5($_POST['pass_user'])
+                'username' => sanitizar($_POST['username']),
+                'userpass' => md5($_POST['userpass'])
             );
 
             //Verificar si existe el usuario
-            $acceso = Mdl_pagina_acceso::verificar_acceso($datosAcceso);
+            $acceso = Mdl_plantilla_laboral::verificar_acceso($datosAcceso);
 
             //No existe el usuario
             if($acceso['count'] === 0){
@@ -37,9 +35,6 @@ class Ctrl_pagina_acceso{
                 $_SESSION['activa'] = true;
                 header("Location: /");
 
-                    
-                //header("Location: " . $_SERVER['PHP_SELF']);
-                //exit(); // Asegúrate de detener la ejecución del código después de redirigir
             }
         }
     }

@@ -1,10 +1,9 @@
 <?php
-require_once ("ctrls/paginas/Ctrl_pagina_acceso.php");
+require_once ("ctrls/paginas/Ctrl_acceso.php");
 require_once ("functions.php");
 
-$acceder = new Ctrl_pagina_acceso();
+$acceder = new Ctrl_acceso();
 ?>
-
 
 <div>
     <div>
@@ -15,8 +14,8 @@ $acceder = new Ctrl_pagina_acceso();
     </div>
     <div>
         <form id="formAcceso" action="" method="POST">
-            <input type="text" name="name_user" id="" placeholder="Usuario">
-            <input type="password" name="pass_user" id="" placeholder="Contraseña">
+            <input type="text" name="username" id="" placeholder="Usuario">
+            <input type="password" name="userpass" id="" placeholder="Contraseña">
         </form>
     </div>
     <div>

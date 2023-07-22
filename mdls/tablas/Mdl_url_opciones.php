@@ -1,14 +1,14 @@
 <?php
     include_once ('mdls/Conexion.php');
 
-    class Mdl_tabla_url_opciones{
+    class Mdl_url_opciones{
 
         static public function obtener_url_opciones(){
             $conexion = Conexion::conectar();
             $resp = [];
 
             $query = "  SELECT *
-                        FROM URL_OPCIONES";
+                        FROM url_opciones";
 
             try{
                 $stmt = $conexion->prepare($query);
