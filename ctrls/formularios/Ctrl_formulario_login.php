@@ -2,7 +2,7 @@
 require_once ("mdls/tablas/Mdl_plantilla_laboral.php");
 require_once ("functions.php");
 
-class Ctrl_acceso{
+class Ctrl_formulario_login{
 
     public function verificar_acceso(){
         $acceso     = [];

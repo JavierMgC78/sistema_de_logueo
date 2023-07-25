@@ -16,8 +16,8 @@ class Plantillas{
      *
      * @return
      */
-    public function acceso(){
-        require_once ("vistas/plantillas/acceso.php");
+    public function login(){
+        require_once ("vistas/plantillas/login.php");
     }
 
 

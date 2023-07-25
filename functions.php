@@ -1,5 +1,4 @@
 <?php
-
 /**
  * Sanitiza las variables con las que se realizán consultas a la base de datos.
  *
@@ -14,8 +13,10 @@ function sanitizar($input) {
     return $sanitizedInput;
 }
 
+
+
 /**
- * Controla el acceso a las opciones basandose en si existe una sesion iniciada o no-
+ * Controla el acceso a las opciones basandose en si existe una sesion iniciada o no
  *
  * @return void
  */

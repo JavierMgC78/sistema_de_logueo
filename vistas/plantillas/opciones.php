@@ -14,6 +14,7 @@
     }
 
 
+
     if(!isset($_GET['depto']) && isset($_GET['op'])){
         $urlCompleta = "";
         $urlEncontrada = false;

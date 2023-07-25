@@ -1,11 +1,11 @@
 # INDICE
-- Sistema de logueo
+- Descripción
 - Tablas
 - Como conectarse a la base de datos
 
 
 
-# SISTEMA DE LOGUEO
+# DESCRIPCIÓN
 Sistema de logueo básico con php y js y por medio del sistema modelo/vista/controlador acceder a diferente contenido mediante un sistema de plantillas.
 
 El sistema está enfocado a llevar la administración y control de ciertos procesos de una empresa pequeña o mediana.
@@ -28,10 +28,10 @@ Contiene los datos de las personas que trabajan en la empresa
 - updated_at
 - updated_for
 
-## TABLA 'cargos'
+## TABLA 'plantilla_laboral'
 Contiene los datos del rol que ejerce la persona en la empresa, asi como su usario y clave de acceso al sistema
 
-- id_cargo
+- id_plantilla_laboral
 - id_persona
 - username
 - userpass

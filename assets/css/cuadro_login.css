@@ -1,0 +1,102 @@
+.cuadro-login{
+    width: 300px;
+    height: 500px;
+
+    padding: 1rem;
+
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .5);
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 10px 1px black;
+}
+
+
+/* LOGO */
+.cuadro-login__logo{
+    display: grid;
+    place-items: center;
+}
+
+.cuadro-login__logo img{
+    width: 100px;
+    height: 100px;
+
+}
+
+/* NOMBRE WEB */
+.cuadro-login__web{
+    text-align: center;
+}
+
+/* INPUTS */
+.cuadro-login__form{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    box-sizing: border-box;
+}
+
+.cuadro-login__input{
+    width: 100%;
+    height: 3rem;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+
+    box-sizing: border-box;
+}
+
+
+/* ICON */
+.cuadro-login__input__icon {
+    width: 4rem;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+.cuadro-login__input__icon span{
+    font-size: 2.5rem;
+    color: RGB(79,29,30);
+
+    box-sizing: border-box;
+}
+
+
+/* INPUT */
+.cuadro-login__input input{
+    width: 100%;
+    height: 100%;
+
+    font-size: 1.2rem;
+    
+    padding-left: .5rem;
+    border: none;
+    background-color: lightgrey;
+    
+    box-sizing: border-box;
+}
+
+
+/* MENSAJE */
+.cuadro-login__msg{
+    width: 100%;
+    height: 4rem;
+
+    text-align: center;
+    line-height: 4rem;
+}
+
+/* SUBMIT */
+.cuadro-login__sbmt input{
+    width: 100%;
+    height: 3rem;
+
+    text-align: center;
+    font-size: 1.2rem;
+}
